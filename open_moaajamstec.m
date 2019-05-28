@@ -53,3 +53,6 @@ SALT{y,1} = sal;
 
 clear temp sal
 end
+
+%Storing data on this way and not in a double single variable with dims = [lon lat dep size(directory)] 
+%can save a lot of bytes
