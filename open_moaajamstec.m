@@ -24,7 +24,7 @@ for i = 1:size(pasta,2)
     end
 end
 
-%Variable with the name of eachfile
+%Creating a variable with the name of eachfile
 name = cell(size(pasta));
 for i = 1:size(name,2);
     for m = 1:size(name,1);
@@ -37,7 +37,7 @@ lon = ncread(name{1,1},'LONGITUDE');
 lat = ncread(name{1,1},'LATITUDE');
 dep = ncread(name{1,1},'PRES');
 
-%Creating T-S variables and cells to storage my T-S data
+%Creating T-S variables and cells to storage the T-S data
 temp = zeros(size(lon,1),size(lat,1),size(dep,1),size(pasta,1));
 sal = zeros(size(lon,1),size(lat,1),size(dep,1),size(pasta,1));
 TEMP = cell(size(pasta,2),1);
